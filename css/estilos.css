@@ -1,7 +1,6 @@
 /* Estilo general */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #F7F9FC;
@@ -56,6 +55,18 @@ nav a:hover {
     background-color: #e6c200;
 }
 
+/* Hero */
+.hero {
+    background-color: #E8F1FF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 /* Tarjetas */
 .card {
     background: white;
@@ -79,7 +90,7 @@ footer {
 .alto-contraste {
     background-color: #000 !important;
     color: #fff !important;
-}git add .
+}
 
 .daltonismo {
     filter: grayscale(100%);
