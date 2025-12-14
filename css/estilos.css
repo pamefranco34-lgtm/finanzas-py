@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005bbb;
+}
+
+.accesibilidad button {
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+.alto-contraste {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.daltonismo {
+    filter: grayscale(100%);
+}
