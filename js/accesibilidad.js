@@ -13,3 +13,8 @@ function toggleContraste() {
 function toggleDaltonismo() {
     document.body.classList.toggle("daltonismo");
 }
+
+function toggleMenu() {
+    const menu = document.querySelector("nav ul");
+    menu.classList.toggle("show");
+}
