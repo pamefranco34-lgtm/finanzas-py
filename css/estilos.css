@@ -1,37 +1,85 @@
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
-    padding: 20px;
-    background-color: #ffffff;
-    color: #333333;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F9FC;
+    color: #333;
 }
 
+/* Header */
 header {
+    background-color: #005BBB;
+    color: white;
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
+/* Navegación */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #005bbb;
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: #FFD500;
+}
+
+/* Botones de accesibilidad */
 .accesibilidad button {
+    background-color: #FFD500;
+    border: none;
+    padding: 8px 12px;
     margin-left: 5px;
-    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.alto-contraste {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+.accesibilidad button:hover {
+    background-color: #e6c200;
 }
+
+/* Tarjetas */
+.card {
+    background: white;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #005BBB;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Modos de accesibilidad */
+.alto-contraste {
+    background-color: #000 !important;
+    color: #fff !important;
+}git add .
 
 .daltonismo {
     filter: grayscale(100%);
