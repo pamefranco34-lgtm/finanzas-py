@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 /* ============================
-   ACCESIBILIDAD
+   ACCESIBILIDAD (BOTONES)
 ============================ */
 .accesibilidad button {
     background-color: #FFD500;
@@ -219,13 +219,36 @@ footer {
 }
 
 /* ============================
-   ACCESIBILIDAD MODOS
+   ACCESIBILIDAD: TAMAÑO DE TEXTO
+============================ */
+.texto-grande {
+    font-size: 1.25rem;
+}
+
+.texto-pequeno {
+    font-size: 0.85rem;
+}
+
+/* ============================
+   ACCESIBILIDAD: ALTO CONTRASTE
 ============================ */
 .alto-contraste {
     background-color: #000 !important;
     color: #fff !important;
 }
 
+.alto-contraste header,
+.alto-contraste footer {
+    background-color: #000 !important;
+}
+
+.alto-contraste a {
+    color: #FFD500 !important;
+}
+
+/* ============================
+   ACCESIBILIDAD: DALTONISMO
+============================ */
 .daltonismo {
     filter: grayscale(100%);
 }
