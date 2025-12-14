@@ -1,11 +1,28 @@
+/* Hero especial para registro */
+.hero-registro {
+    background-color: #DCEBFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-registro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+.form-card {
+    max-width: 600px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
 }
 
 input {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #bbb;
     border-radius: 6px;
     font-size: 1rem;
