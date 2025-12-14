@@ -1,31 +1,40 @@
-/* General */
+/* ============================
+   ESTILO GENERAL
+============================ */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F7F9FC;
-    color: #333;
+    background-color: #F4F7FB;
+    color: #2E2E2E;
 }
 
-/* Header */
+/* ============================
+   HEADER
+============================ */
 header {
-    background-color: #005BBB;
+    background: linear-gradient(90deg, #005BBB, #0073E6);
     color: white;
-    padding: 15px 25px;
+    padding: 18px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
-/* Menú */
+/* ============================
+   MENÚ
+============================ */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
@@ -33,11 +42,13 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
     color: #FFD500;
+    transform: scale(1.05);
 }
 
 /* Botón hamburguesa */
@@ -50,7 +61,9 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Accesibilidad */
+/* ============================
+   ACCESIBILIDAD
+============================ */
 .accesibilidad button {
     background-color: #FFD500;
     border: none;
@@ -59,100 +72,141 @@ nav a:hover {
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .accesibilidad button:hover {
-    background-color: #e6c200;
+    background-color: #E6C200;
 }
 
-/* Hero */
+/* ============================
+   HERO
+============================ */
 .hero {
-    background-color: #E8F1FF;
-    padding: 60px 20px;
+    background: linear-gradient(180deg, #E8F1FF, #F4F7FB);
+    padding: 70px 20px;
     text-align: center;
 }
 
-.hero-registro {
-    background-color: #DCEBFF;
+.hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #003E80;
 }
 
-.hero h2 {
-    font-size: 2rem;
+.hero p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.hero-registro {
+    background: linear-gradient(180deg, #DCEBFF, #F4F7FB);
+}
+
+/* ============================
+   TARJETAS
+============================ */
+.card {
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+.card h3 {
+    color: #005BBB;
     margin-bottom: 10px;
 }
 
-/* Cards */
-.card {
-    background: white;
-    margin: 25px auto;
-    padding: 25px;
-    max-width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
+/* ============================
+   FORMULARIO
+============================ */
 .form-card {
-    max-width: 600px;
+    max-width: 550px;
 }
 
-/* Formulario */
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
+}
+
+label {
+    font-weight: 600;
 }
 
 input {
     padding: 12px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
+    border: 1px solid #C8D3E1;
+    border-radius: 8px;
     font-size: 1rem;
+    transition: 0.3s ease;
 }
 
 input:focus {
-    outline: 2px solid #005BBB;
+    outline: none;
+    border-color: #005BBB;
+    box-shadow: 0 0 6px rgba(0,91,187,0.4);
 }
 
 .btn-registrar {
     background-color: #005BBB;
     color: white;
-    padding: 12px;
+    padding: 14px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .btn-registrar:hover {
     background-color: #004799;
+    transform: scale(1.03);
 }
 
 .error {
-    color: red;
+    color: #D60000;
     font-weight: bold;
 }
 
-/* Footer */
+/* ============================
+   FOOTER
+============================ */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 18px;
     background-color: #005BBB;
     color: white;
     margin-top: 40px;
+    font-size: 0.9rem;
 }
 
-/* Responsive */
+/* ============================
+   RESPONSIVE
+============================ */
 @media (max-width: 768px) {
+
     nav ul {
         display: none;
         flex-direction: column;
         background-color: #005BBB;
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 20px;
-        padding: 15px;
-        border-radius: 8px;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     nav ul.show {
@@ -164,7 +218,9 @@ footer {
     }
 }
 
-/* Modos de accesibilidad */
+/* ============================
+   ACCESIBILIDAD MODOS
+============================ */
 .alto-contraste {
     background-color: #000 !important;
     color: #fff !important;
